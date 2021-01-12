@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93f6d4ee83.js" crossorigin="anonymous"></script>
+    <script>
+        function displayResponsive() {
+          var x = document.getElementById("mobile-topnav-items");
+          if (x.className === "nav-items") {
+            x.className += " show";
+          } else {
+            x.className = "nav-items";
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <!---------------Header--------------->
+    <nav class="col-row-third">
+        <div>
+          <!---------------Logo--------------->
+      <li>
+        <img id="logo" src="assets/bluezones_logo.png" alt="logo" />
+      </li>
+      <!---------------Search Bar--------------->
+     <!-- <div id="search-div" class="search-li">-->
+      <li><form action="#"><div class="search-bar">
+          <div class="search-select">
+          <select name="search-name" class="col-row-third">
+              <option value="0">Mainnet </option>
+              <option value="1">Testnet</option>
+            </select>
+        </div>
+        <div class="divider"></div>
+        <div class="search-input">
+            <input class="search-input" type="text" placeholder="Search by address/ transaction / block"/>
+        </div>
+        <div>
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        </div></form>
+    </li>
+  <!--</div>-->
+</div>
+<!---------------Other nav items--------------->
+    <div class="nav-items" id="topnav-items">
+      <li><a href="index.html">Dashboard</a></li>
+      <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="blockchain.html">Blockchain <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-menu">					
+            <li><a href="#" class="dropdown-item">PoS Chain</a></li>
+            <li><a href="#" class="dropdown-item">PoW Chain</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="resources.html">Resources <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-menu">					
+            <li><a href="#" class="dropdown-item">Wallet</a></li>
+            <li><a href="#" class="dropdown-item">Mining</a></li>
+            <li><a href="#" class="dropdown-item">Documentation</a></li>
+        </ul>
+      </li>
+      <li><a href="login.html">Login</a></li>
+      
+    </div>
+    <div class="nav-items" id="mobile-topnav-items">
+      <div>
+        <li><a href="index.html">Dashboard</a></li>
+       	<li><a href="blockchain.html">PoS Chain</a></li>
+        <li><a href="blockchain.html">PoW Chain</a></li>					
+        <li><a href="blockchain.html">Wallet</a></li>
+        </div>
+        <div class="nav-other-items">
+        <li><a href="resources.html">Mining</a></li>
+        <li><a href="resources.html">Documentation</a></li>
+        <li><a href="login.html">Login</a></li>
+      </div>
+      </div> 
+    <!---------------Language--------------->
+    <div>
+    <li class="lang-li">
+        <div class="lang-bar">
+          <select class="lang-select col-row-third">
+              <option>EN</option>
+              <option> CH </option>
+          </select>
+          </div>
+      </li>
+      <!---------------Responsive toggele--------------->
+      <li class="toggale-btn"><a onclick="displayResponsive()"><span class="fas fa-bars"></span></a></li>  
+    </div>
+ </nav>
+ <!--------------Home Banner----------------->
+  <div class="homebanner">
+    <div class="container">
+
+    <img src="" alt="" class="banner">
+    <h1 class="title">Meter Blockchain Exlorer</h1>
+    <form action="#">
+        <div class="banner-search-bar">
+        <div class="banner-search-select">
+        <select name="banner-search-name" class="col-row-primary">
+            <option value="0">Main net </option>
+            <option value="1">Testnet</option>
+          </select>
+      </div>
+      <div class="banner-divider"></div>
+      <div class="banner-search-input">
+          <input class="banner-search-input" type="text" placeholder="Search by address/ transaction / block"/>
+      </div>
+      <div>
+          <button type="submit" class="banner-search-btn">Search</button>
+      </div>
+      </div></form>
+ </div>
+ </div>
+ <!--Pos Pow-->
+ <div class="container container-pos"><a href="#" class="active col-row-primary">PoS</a><a href="#" class="col-row-primary">PoW</a></div>
+  <div class="container data-container">
+    <div class="upper-grid">
+      <div class="upper-grid-class1"><div class="col-row"><h3>$21.56(+4.3%)</h3><span>MTRG Price</span></div></div>
+      <div class="upper-grid-class2"><div class="col-row"><h3>2351 MTRG</h3><span>Average Daily Reward Pool</span></div></div>
+      <div class="upper-grid-class3"><div class="col-row"><h3>32758</h3><span>Block Height</span></div></div>
+      <div class="upper-grid-class4"><div class="col-row"><h3>32758</h3><span>K Block Height</span></div></div>
+      <div class="upper-grid-class5"><div class="col-row"><h3>73%</h3><span>Stacked</span></div></div>
+      <div class="upper-grid-class6"><div class="col-row"><h3>274</h3><span>Validators</span></div></div> 
+      <div class="banner-divider1"></div>
+      <div class="banner-divider2"></div>
+      <div class="banner-divider3"></div>
+      <div class="banner-divider4"></div>
+      <div class="banner-horizontal-divider"></div>
+    </div>
+    <div class="down-grid">
+      <div class="down-grid-class1"><div class="col-row"><h3>245</h3><span>Validators</span></div></div>
+      <div class="down-grid-class2"><div class="col-row"><h3>2351 MTRG</h3><span>Total Stacking</span></div></div>
+      <div class="down-grid-class3"><div class="col-row"><h3>32758</h3><span>Height</span></div></div>
+      <div class="down-grid-class4"><div class="col-row"><h3>12.39 USD</h3><span>Price</span></div></div>
+      <div class="down-grid-class5"><div class="col-row"><h3>78/90</h3><span>Online/ Toal Node</span></div></div>
+      <div class="banner-divider1"></div>
+      <div class="banner-divider2"></div>
+      <div class="banner-divider3"></div>
+      <div class="banner-horizontal-divider"></div>
+    </div>
+    <div class="left-grid">
+      <div class="card-title">Recent Blocks</div>
+      <div class="left-grid-table-div">
+      <table class="left-grid-table">
+        <tr>
+          <td><img src="assets\icon.png" alt=""></td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
+        </tr>
+        <tr>
+          <td><img src="assets\icon.png" alt=""></td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
+        </tr>
+        <tr>
+          <td><img src="assets\icon.png" alt=""></td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
+        </tr>
+        <tr>
+          <td><img src="assets\icon.png" alt=""></td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
+        </tr>
+        <tr>
+          <td><img src="assets\icon.png" alt=""></td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="right-grid">
+        <div class="card-title">Recent Transactions</div>
+        <div class="right-grid-table-div">
+        <table class="right-grid-table">
+          <tr>
+            <td><img src="assets\icon.png" alt=""></td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
+          </tr>
+          <tr>
+            <td><img src="assets\icon.png" alt=""></td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
+          </tr>
+          <tr>
+            <td><img src="assets\icon.png" alt=""></td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
+          </tr>
+          <tr>
+            <td><img src="assets\icon.png" alt=""></td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+      <div class="footer-meter">
+          <br/>
+        <img id="logo" src="assets/bluezones_logo.png" alt="logo" />
+          <div class="col-row-third copyright">Copyright © 2019<br> Decentralized Finance Labs inc.</div>
+          <br/>
+          <div class="blue">Download Meter Wallets!</div>
+          <button class="desktop-btn"><i class="fas fa-laptop"></i>Desktop Wallets</button>
+        </div>
+      <div class="footer-social">
+        <ul class="footer-menu col-row-third">
+          <li><a href="index.html">Dashboard</a></li>
+          <li>Blockchain</li>
+          <li>Auctions</li>
+        </ul>
+        <ul class="footer-menu1 col-row-third">
+          <li>Wallets</li>
+          <li>Mining</li>
+          <li>Documentation</li>
+        </ul>
+        <ul class="social-icons col-row-third">
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-telegram"></i></li>
+          <li><i class="fab fa-discord"></i></li>
+          <li><i class="fab fa-weixin"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
